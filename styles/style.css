@@ -1,1 +1,7 @@
 /* место для вашего кода */
+.header {
+  background-color: black;
+}
+.header__logo {
+  height: 40px;
+}
