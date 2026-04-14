@@ -144,7 +144,6 @@
 .bet-button {
   /* сброс стандартных стилей */
   margin: 0;
-  border: none;
   /* новые стили */
   font-size: 22px;
   display: flex;
