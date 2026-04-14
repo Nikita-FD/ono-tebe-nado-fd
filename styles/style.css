@@ -2,20 +2,25 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px 50px;
+  padding: 92px 50px 87px 50px;
+}
+
+.header__menu {
+  justify-self: start;
 }
 
 .header__links-list {
   display: flex;
   flex-direction: row;
-  gap: 13px;
+  gap: 10px;
   list-style: circle;
   list-style-position: inside;
-  margin: 36px;
   font-family: Raleway, Arial, sans-serif;
   font-size: 18px;
   white-space: nowrap;
   text-underline-offset: 4px;
+  position: relative;
+  top: -6px;
 }
 
 .header__links-list-item_no-bullit {
@@ -27,6 +32,7 @@
 }
 
 .header__logo {
+  justify-self: center;
   width: 148px;
 }
 
@@ -44,14 +50,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-self: end;
-  margin: 0;
+  margin-right: 37px;
   padding: 0;
   box-sizing: border-box;
   font-style: normal;
   max-width: 240px;
   font-family: Raleway, Arial, sans-serif;
   font-size: 18px;
-  flex-direction: nowrap;
 }
 
 .header__address__tel {
@@ -63,13 +68,12 @@
 }
 
 .cover {
-  margin-top: 100px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   min-height: 757px;
   position: relative;
-  padding: 165px 50px 207px 50px;
+  padding: 165px 50px 85px 50px;
 }
 
 .overlay {
@@ -89,19 +93,25 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
-  line-height: 115%;
 }
 
 .aligned-text_left {
   display: block;
+  line-height: 115%;
 }
 
 .aligned-text_center {
   text-align: center;
+  line-height: 115%;
+  position: relative;
+  top: 18px;
 }
 
 .aligned-text_right {
   text-align: right;
+  line-height: 115%;
+  position: relative;
+  top: 40px;
 }
 
 .letter-spacing-extended {
@@ -121,10 +131,12 @@
 
 .cover__description-text {
   position: relative;
+  top: 27px;
   z-index: 2;
   color: white;
-  word-spacing: 29px;
-  font-size: 19px;
+  word-spacing: 19px;
+  font-size: 22px;
+  line-height: 28px;
   text-transform: uppercase;
   font-family: Raleway, Arial, sans-serif;
 }
@@ -132,13 +144,13 @@
 .bet-button {
   /* сброс стандартных стилей */
   margin: 0;
-  padding: 0;
   border: none;
-  background: none;
   /* новые стили */
+  font-size: 22px;
   display: flex;
   justify-content: flex-end;
   position: relative;
+  top: 27px;
   z-index: 2;
   color: white;
   background-color: transparent;
@@ -154,8 +166,8 @@
 }
 
 .lots__heading {
-  margin-left: 64px;
-  margin-bottom: 27px;
+  margin-left: 40px;
+  margin-bottom: 20px;
   font-family: Raleway, Arial, sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -209,6 +221,7 @@
 }
 
 .card__text {
+  font-size: 20px;
   color: white;
   margin-top: auto;
   z-index: 2;
@@ -269,6 +282,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 47px;
+  margin-top: 27px;
+}
+
+.about__column {
+  padding-top: 133px;
 }
 
 .footer__menu-list {
